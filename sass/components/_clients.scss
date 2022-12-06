@@ -1,0 +1,31 @@
+.clients {
+    @extend %section;
+
+    &-list {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    &__link {
+        display: flex;
+        border: 1px solid #AFB1B8;
+        border-radius: 4px;
+        fill: #AFB1B8;
+        justify-content: center;
+        align-items: center;
+        height: 92px;
+        width: 170px;
+        
+        transition: var(--transition);
+        
+            &:hover,
+            &:focus {
+                fill: var(--accent);
+                border: 1px solid var(--accent);
+            }
+    } 
+}
+
+
+

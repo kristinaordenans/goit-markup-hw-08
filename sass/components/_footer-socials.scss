@@ -1,0 +1,35 @@
+.footer-socials-list {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-socials__title {
+    margin-top: 12px;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.footer-socials__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 44px;
+    width: 44px;
+
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    fill: #ffffff;
+    transition: var(--transition);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent);
+    }
+}
