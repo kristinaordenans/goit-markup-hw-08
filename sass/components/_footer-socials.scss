@@ -1,11 +1,19 @@
+.footer-socials {
+    @media screen and (min-width:480px) {
+        margin-bottom: 60px;
+    }
+}
+
 .footer-socials-list {
     display: flex;
     gap: 10px;
+    justify-content: center;
 }
 
 .footer-socials__title {
     margin-top: 12px;
     margin-bottom: 20px;
+    text-align: center;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -13,6 +21,10 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #ffffff;
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 
 .footer-socials__link {

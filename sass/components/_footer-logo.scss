@@ -6,4 +6,10 @@
 .logo-link {
     text-decoration: none;
     display: block;
+    margin: 0;
+    margin-bottom: 20px;
+
+    @media screen and (max-width:1199px) {
+        text-align: center;
+    }
 }
