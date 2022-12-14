@@ -3,8 +3,9 @@
 
     &-list {
         display: flex;
-        gap: 30px;
+        flex-wrap: wrap;
         justify-content: center;
+        gap: 30px;
     }
 
     &__link {
@@ -15,7 +16,7 @@
         justify-content: center;
         align-items: center;
         height: 92px;
-        width: 170px;
+        width: 210px;
         
         transition: var(--transition);
         
@@ -24,6 +25,14 @@
                 fill: var(--accent);
                 border: 1px solid var(--accent);
             }
+
+        @media screen and (min-width:768px) and (max-width:1199px) {
+            width: 225px;
+        }
+        
+        @media screen and (min-width:1200px) {
+            width: 170px;
+        }
     } 
 }
 
