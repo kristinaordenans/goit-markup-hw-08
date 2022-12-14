@@ -10,8 +10,6 @@
 
 .header-contact__link {
     display: flex;
-    // padding-top: 32px;
-    // padding-bottom: 32px;
 
     @media screen and (min-width:1200px) {
             padding-top: 32px;
@@ -21,7 +19,6 @@
 
     text-decoration: none;
     font-weight: 500;
-    // font-size: 14px;
     font-size: 12px;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -42,10 +39,23 @@
 .header-contact__item:not(:last-child) {
 
     @media screen and (min-width:768px)and (max-width:1199px) {
-            margin-bottom: 10px;
-        }
+        margin-bottom: 10px;
+    }
     @media screen and (min-width:1200px) {
-       margin-right: 30px;
+        margin-right: 30px;
+    }
+}
+
+.header-contact__icon-mail {
+    @media screen and (max-width:1199px) {
+        width: 14px;
+        height: 10px;
+    }
+}
+.header-contact__icon-phone {
+    @media screen and (max-width:1199px) {
+        width: 10px;
+        height: 14px;
     }
 }
 
