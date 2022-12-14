@@ -1221,8 +1221,16 @@ img {
   margin-bottom: auto;
 }
 
-.mobile-close__icon {
+.mobile-close__icon,
+.mobile-open__icon {
   fill: #212121;
+}
+
+.mobile-close__icon:hover,
+.mobile-open__icon:hover,
+.mobile-close__icon:focus,
+.mobile-open__icon:focus {
+  fill: var(--accent);
 }
 
 .mobile-menu__link {
