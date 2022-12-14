@@ -201,6 +201,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: 94px;
 }
 .header-nav--centering {
   display: -webkit-box;
@@ -262,9 +263,12 @@ img {
 }
 
 .header-contact__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text);
@@ -279,11 +283,9 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .header-contact__link {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
+    font-size: 14px;
   }
 }
 .header-contact__link:hover, .header-contact__link:focus {
@@ -291,8 +293,15 @@ img {
   fill: var(--accent);
 }
 
-.header-contact__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .header-contact__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-contact__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .hero {
@@ -1284,4 +1293,8 @@ img {
   line-height: 28px;
   letter-spacing: 0.02em;
   color: #757575;
+}
+
+.mobile-menu__contacts-item:not(:last-child) {
+  margin-bottom: 64px;
 }/*# sourceMappingURL=main.css.map */

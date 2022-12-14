@@ -149,3 +149,7 @@
     color: #757575;
 }
 
+.mobile-menu__contacts-item:not(:last-child) {
+    margin-bottom: 64px;
+}
+

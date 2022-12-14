@@ -9,19 +9,20 @@
 }
 
 .header-contact__link {
-    // display: flex;
+    display: flex;
     // padding-top: 32px;
     // padding-bottom: 32px;
 
     @media screen and (min-width:1200px) {
-        display: flex;
             padding-top: 32px;
             padding-bottom: 32px;
+            font-size: 14px;
     }
 
     text-decoration: none;
     font-weight: 500;
-    font-size: 14px;
+    // font-size: 14px;
+    font-size: 12px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--main-text);
@@ -39,6 +40,12 @@
 }
 
 .header-contact__item:not(:last-child) {
-    margin-right: 30px;
+
+    @media screen and (min-width:768px) {
+            margin-bottom: 10px;
+        }
+    @media screen and (min-width:1200px) {
+       margin-right: 30px;
+    }
 }
 
