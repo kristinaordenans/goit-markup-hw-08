@@ -11,7 +11,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
+// mobile screen
     background-image: linear-gradient(to right,
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
@@ -20,9 +20,45 @@
     @media (min-device-pixel-ratio: 2),
     (min-resolution:192dpi),
     (min-resolution:2dppx) {
-        background-image: url(../images/Header-mobile_2x.jpg);
-        
+        background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+        url(../images/Header-mobile_2x.jpg);   
     }
+// tablet screen
+
+@media screen and (min-width:768px) {
+    background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/Header-tanlet_1x.jpg);
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution:192dpi),
+        (min-resolution:2dppx) {
+            background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../images/Header-tanlet_2x.jpg);
+        }
+}
+
+// desktop
+@media screen and (min-width:1200px) {
+    background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/header-desk_1x.jpg);
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution:192dpi),
+        (min-resolution:2dppx) {
+            background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../images/header-desk_2x.jpg);
+        }
+}
 
     &-title {
             margin-bottom: 30px;
